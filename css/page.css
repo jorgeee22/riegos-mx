@@ -38,6 +38,10 @@ section p {
   color: #555;
 }
 
+.iconBoot{
+  color : #002159;
+}
+
 /* === Footer === */
 footer {
   font-size: 0.95rem;
