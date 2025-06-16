@@ -22,6 +22,15 @@ header p {
   color: #666;
 }
 
+.hero-header {
+  background-image: url('img/banner_empresa.png');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+
+
 /* === Imágenes con sombra y bordes suaves === */
 img.img-fluid {
   border-radius: 0.5rem;
