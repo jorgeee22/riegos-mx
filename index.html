@@ -11,12 +11,14 @@
 </head>
 
 <body>
+
    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
   <div class="container-fluid">
-    <!-- Logo -->
-    <a class="navbar-brand me-5" href="/">
-      <img src="img/bestOneLogo.png" alt="Logo" width="50" height="50">
-    </a>
+       <!-- Columna del logo (30%) -->
+      <a class="navbar-brand" href="/">
+        <img src="img/bestOneLogo.png" alt="Logo" style="max-height: 70px;">
+      </a>
+   
 
     <!-- Botón para móviles -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -24,34 +26,38 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Enlaces centrados -->
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="/equipos.html">Equipos de riego</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="/empresa.html">La empresa</a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link active" aria-current="page" href="/Contacto">Contacto</a>
-        </li>
-      </ul>
+     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+    <!-- Columna 2: Enlaces (70%) -->
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="/">Inicio</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/equipos.html">Equipos de riego</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/empresa.html">La empresa</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        
+      </div>
     </div>
-  </div>
 </nav>
+
+
 <!-- Hero Section -->
 <div class="hero-section d-flex align-items-center justify-content-center text-center text-white" style="height: 90vh; background: url('img/irrigation_BG.jpg') center/cover no-repeat;">
   <div>
     <h1 class="display-4 fw-bold">Bienvenido a Nuestro Sitio</h1>
     <p class="lead">Ofrecemos soluciones a tu medida con calidad y confianza.</p>
-    <a href="/Contacto" class="btn btn-primary btn-lg mt-3">Contáctanos</a>
+    <a href="/contacto.html" class="btn btn-primary btn-lg mt-3">Contáctanos</a>
   </div>
 </div>
 <!-- Cards Section -->
@@ -144,26 +150,22 @@
   <div class="row text-center">
     <div class="col-md-3 mb-4">
       <i class="bi bi-telephone-fill fs-2 mb-2 iconBoot"></i>
-      <h5>Teléfono</h5>
       <p>(123) 456-7890</p>
     </div>
 
     <div class="col-md-3 mb-4">
       <i  class="bi bi-envelope-fill fs-2 mb-2 iconBoot "></i>
-      <h5>Correo</h5>
       <p>contacto@empresa.com</p>
     </div>
 
     <div class="col-md-3 mb-4">
-      <i class="bi bi-geo-alt-fill fs-2 mb-2 iconBoot"></i>
-      <h5>Dirección</h5>
-      <p>Calle Falsa 123, Ciudad, País</p>
+      <i class="bi bi-facebook fs-2 fs-2 mb-2 iconBoot"></i>
+      <p>Riegos Mecanizados del Pacífico</p>
     </div>
 
     <div class="col-md-3 mb-4">
       <i   class="bi bi-clock-fill fs-2 mb-2 iconBoot"></i>
-      <h5>Horario</h5>
-      <p>Lun a Vie: 8:00 a.m. - 1:00 p.m. y 3:00 p.m. - 7:00 p.m. <br>Sáb: 8:00 a.m. - 1:00 p.m.</p>
+      <p>Lun a Vie: 8:00 a.m. - 1:00 p.m. | 3:00 p.m. - 6:30 p.m. <br>Sáb: 8:00 a.m. - 1:00 p.m.</p>
     </div>
   </div>
 </div>
@@ -182,11 +184,14 @@
       </a>
     </div>
 
-    <p class="mb-1">© 2025 Riegos Mecanizados del Pacifico. Todos los derechos reservados.</p>
+    <p class="mb-1">© 2025 Riegos Mecanizados del Pacifico S.A. de C.V. Todos los derechos reservados.</p>
   </div>
 </footer>
 
  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <a href="https://wa.me/5216681234567" class="whatsapp-float" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
 </body>
 </html>
