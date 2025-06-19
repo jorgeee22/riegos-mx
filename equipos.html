@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/page.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   
@@ -37,7 +37,7 @@
             <a class="nav-link " href="/">Inicio</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link active" href="/equipos.html">Equipos de riego</a>
+            <a class="nav-link active" href="/equipos.html">Sistemas de riego</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="/servicios.html">Servicios</a>
@@ -58,51 +58,102 @@
 <!-- Hero o Encabezado -->
  <header class="bg-light py-5 text-center">
   <div class="container">
-    <h1 class="display-4 fw-bold">Nuestros Equipos de Riego</h1>
+    <h1 class="display-4 fw-bold">Sistemas de riego</h1>
     <p class="lead text-muted">Soluciones adaptadas a cada cultivo y tipo de terreno</p>
   </div>
 </header>
 
-  <!-- Sección de Equipos -->
- <section class="container py-5">
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <img src="img/AspersionMec.jpg" class="img-fluid rounded shadow" alt="Aspersión Mecanizada">
-    </div>
-    <div class="col-md-6">
-      <h3 class="fw-bold">Aspersión Mecanizada</h3>
-      <p>Ideal para grandes extensiones agrícolas. Cobertura uniforme, eficiente y automatizada.</p>
-    </div>
-  </div>
+  <section class="equipos-section bg-light py-5">
+  <div class="container">
 
-  <div class="row align-items-center flex-md-row-reverse mb-5">
-    <div class="col-md-6">
-      <img src="img/AspersionFija.jpg" class="img-fluid rounded shadow" alt="Aspersión Fija">
-    </div>
-    <div class="col-md-6">
-      <h3 class="fw-bold">Aspersión Fija</h3>
-      <p>Sistema de riego estacionario con alta eficiencia y bajo mantenimiento.</p>
-    </div>
-  </div>
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+      
+      <!-- Imagen -->
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
+        <img src="img/AspersionMec.jpg" class="img-fluid rounded-4 shadow-lg" alt="Aspersión Mecanizada">
+      </div>
 
-  <div class="row align-items-center mb-5">
-    <div class="col-md-6">
-      <img src="img/porGoteo.jpg" class="img-fluid rounded shadow" alt="Riego por Goteo">
-    </div>
-    <div class="col-md-6">
-      <h3 class="fw-bold">Riego por Goteo</h3>
-      <p>Alta precisión para riego localizado. Ahorro de agua y mejor aprovechamiento de nutrientes.</p>
-    </div>
-  </div>
+      <!-- Contenido -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h2 class="fw-bold mb-3 text-success">Aspersión Mecanizada</h2>
+        <p class="text-muted fs-5 mb-4">
+          Ideal para grandes extensiones agrícolas. Cobertura uniforme, eficiente y automatizada.
+        </p>
 
-  <div class="row align-items-center flex-md-row-reverse mb-5">
-    <div class="col-md-6">
-      <img src="img/pump.jpeg" class="img-fluid rounded shadow" alt="Bombeo y Filtración">
+        <ul class="list-unstyled mb-4 text-muted fs-6">
+          <li class="mb-2">✅ Cobertura uniforme en terrenos grandes y planos</li>
+          <li class="mb-2">✅ Ideal para cultivos como maíz, trigo o alfalfa</li>
+          <li class="mb-2">✅ Menor necesidad de mano de obra</li>
+          <li class="mb-2">✅ Compatible con fertirriego y sensores de humedad</li>
+        </ul>
+
+        <a href="/contacto.html" class="btn btn-success px-4 py-2">
+          Solicita información
+        </a>
+      </div>
+      
     </div>
-    <div class="col-md-6">
-      <h3 class="fw-bold">Bombeo y Filtración</h3>
-      <p>Equipos esenciales para garantizar presión constante y agua limpia en todo el sistema.</p>
+
+   <div class="row align-items-center mb-5" >
+  <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+    <img src="img/AspersionFija.jpg" class="img-fluid rounded-4 shadow-lg" alt="Aspersión Fija">
+  </div>
+  <div class="col-lg-6" data-aos="fade-left">
+    <h2 class="fw-bold mb-3 text-success">Aspersión Fija</h2>
+    <p class="mb-4 text-muted fs-5">
+      Sistema de riego estacionario con alta eficiencia y bajo mantenimiento.
+    </p>
+    <ul class="list-unstyled mb-4 text-muted fs-6">
+      <li>✅ Flexible en disposición para diferentes tipos de terreno</li>
+      <li>✅ Instalación fija o semipermanente</li>
+      <li>✅ Alta eficiencia con presión moderada</li>
+      <li>✅ Ideal para hortalizas y viveros</li>
+    </ul>
+    <a href="/contacto.html" class="btn btn-success px-4 py-2">Solicita información</a>
+  </div>
+</div>
+
+
+     <!-- Riego por Goteo  -->
+    <div class="row align-items-center mb-5 flex-lg-row-reverse">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-left">
+        <img src="img/porGoteo.jpg" class="img-fluid rounded-4 shadow-lg" alt="Riego por Goteo">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2 class="fw-bold mb-3" id = "blue-txt">Riego por Goteo</h2>
+        <p class="mb-4 text-muted fs-5">
+          Alta precisión para riego localizado. Ahorro de agua y mejor aprovechamiento de nutrientes.
+        </p>
+        <ul class="list-unstyled mb-4 text-muted fs-6">
+          <li>✅ Ahorro de agua hasta un 50%</li>
+          <li>✅ Previene enfermedades al no mojar la superficie</li>
+          <li>✅ Mejora la eficiencia en fertilización (fertirriego)</li>
+          <li>✅ Ideal para frutales, hortalizas e invernaderos</li>
+        </ul>
+        <a href="/contacto.html" id="blue-btn" class="btn text-white px-4 py-2">Solicita información</a>
+      </div>
     </div>
+
+ <!-- Bombeo y Filtración -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+        <img src="img/pump.jpeg" class="img-fluid rounded-4 shadow-lg" alt="Bombeo y Filtración">
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <h2 class="fw-bold mb-3" id = "blue-txt">Bombeo y Filtración</h2>
+        <p class="mb-4 text-muted fs-5">
+          Equipos esenciales para garantizar presión constante y agua limpia en todo el sistema.
+        </p>
+        <ul class="list-unstyled mb-4 text-muted fs-6">
+          <li>✅ Bombas para pozos, presurización o superficie</li>
+          <li>✅ Filtros de arena, malla o anillos</li>
+          <li>✅ Protege goteros, aspersores y válvulas de obstrucciones</li>
+          <li>✅ Permite automatización y control del caudal</li>
+        </ul>
+        <a href="/contacto.html" id = "blue-btn" class="btn text-white px-4 py-2">Solicita información</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -132,5 +183,10 @@
   <a href="https://wa.me/5216681234567" class="whatsapp-float" target="_blank">
   <i class="bi bi-whatsapp"></i>
 </a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

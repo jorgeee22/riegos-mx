@@ -24,12 +24,6 @@ header {
   padding: 4rem 0;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 .hero-section {
   height: 100vh;
   max-height: 800px;
@@ -40,9 +34,7 @@ img {
   text-align: center;
   color: white;
   padding: 2rem;
-
 }
-
 
 .hero-section h1 {
   font-size: clamp(1.5rem, 5vw, 3rem); /* entre 24px y 48px según ancho */
@@ -53,18 +45,36 @@ img {
   font-size: clamp(1rem, 2.5vw, 1.5rem); /* entre 16px y 24px */
 }
 
+.hero-header {  /* Aplica en empresa */
+  background-image: url('../img/irrigation-banner.jpg');
+  background-size: cover;
+  background-position: 80% 20%;
+  height: 30vh;
+  position: relative;
+}
+
+.equipos-section {
+  background-color: #f8f9fa;
+}
+
+.equipos-section h2 {
+  font-size: 2rem;
+}
+
+.equipos-section p {
+  line-height: 1.6;
+}
+
 .logo-img {
   height: 60px;
   max-height: none;
  
 }
 
-.hero-header {  /* Aplica en empresa */
-  background-image: url('img\banner_empresa.png');
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
-  position: relative;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 
@@ -140,3 +150,19 @@ footer a:hover {
   color: #fff;
 }
 
+#blue-btn{
+  background-color: #002159;
+}
+
+#blue-btn:hover{
+  background-color: #105a8a;
+}
+
+#blue-txt{
+  color: #002159;
+}
+
+.card-img-top {
+  height: 272px; /* o lo que necesites */
+  object-fit: cover;
+}
