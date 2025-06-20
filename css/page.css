@@ -1,11 +1,11 @@
 /* === Tipografía general === */
-body {
+html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #333;
   background-color: #f9f9f9;
   overflow-x: hidden;
-  max-width: 100vw;
+  max-width: 100%;
 }
 
 * {
