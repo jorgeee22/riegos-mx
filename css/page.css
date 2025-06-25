@@ -27,7 +27,7 @@ header {
 .hero-section {
   height: 100vh;
   max-height: 800px;
-  background: url('../img/irrigation_BG.jpg') center center / cover no-repeat;
+  background: url(../img/IMG-20250623-WA0058.jpg) center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,9 +46,9 @@ header {
 }
 
 .hero-header {  /* Aplica en empresa */
-  background-image: url('../img/irrigation-banner.jpg');
+  background-image: url(../img/IMG-20250623-WA0066.jpg);
   background-size: cover;
-  background-position: 80% 20%;
+  background-position: 50% 50%;
   height: 30vh;
   position: relative;
 }
@@ -166,3 +166,11 @@ footer a:hover {
   height: 272px; /* o lo que necesites */
   object-fit: cover;
 }
+
+.swiper-slide img {
+  width: 100%;
+  height: fit-content; /* o el alto que necesites */
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+

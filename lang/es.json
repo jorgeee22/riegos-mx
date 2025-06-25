@@ -1,0 +1,97 @@
+{
+  "navbar_home": "Inicio",
+  "navbar_systems": "Sistemas de riego",
+  "navbar_services": "Servicios",
+  "navbar_us": "La empresa",
+  "navbar_contact": "Contacto",
+  "hero_title" : "Somos Riegos Mecanizados del Pacifico",
+  "hero_subtitle" : "Desde 2005 trabajamos para impulsar la agricultura con calidad, experiencia y atención cercana.",
+  "contact_us" : "Contáctanos",
+  "cards_title" : "Lo mejor para tu campo",
+  "card_1_title" : "Sistemas de riego",
+  "card_1_subtitle" :"Venta, instalación y mantenimiento completo.",
+  "card_2_title" : "Refacciones",
+  "card_2_subtitle" :"Refacciones agrícolas originales.",
+  "card_3_title" : "Servicios Tecnicos",
+  "card_3_subtitle" :"Asistencia en campo y soporte tecnico.",
+  "card_4_title" : "Asesoria Personalizada",
+  "card_4_subtitle" :"Diagnóstico y soluciones para tu terreno.",
+  "brands_title": "Las marcas que distribuimos",
+  "contact_subtitle": "Estamos aquí para ayudarte. Puedes comunicarte con nosotros a través de los siguientes medios:",
+ "schedule_mon_fri": "Lunes a Viernes:",
+  "schedule_sat": "Sábado:",
+"language" : " Idioma",
+  
+  
+  "equipos_hero_title": "Sistemas de riego",
+  "equipos_hero_subtitle": "Soluciones adaptadas a cada cultivo y tipo de terreno",
+  "system_1":"Aspersión Mecanizada",
+  "system_1_subtitle": "Ideal para grandes extensiones agrícolas. Cobertura uniforme, eficiente y automatizada.",
+  "system_1_1": "Cobertura uniforme en terrenos grandes y planos",
+  "system_1_2": "Ideal para cultivos como maíz, trigo o alfalfa",
+  "system_1_3": "Menor necesidad de mano de obra",
+  "system_1_4": "Compatible con fertirriego y sensores de humedad",
+  "more_info": "Solicita información",
+  "system_2":"Aspersión Fija",
+  "system_2_subtitle": "Sistema de riego estacionario con alta eficiencia y bajo mantenimiento.",
+  "system_2_1": "Flexible en disposición para diferentes tipos de terreno",
+  "system_2_2": "Instalación fija o semipermanente",
+  "system_2_3": "Alta eficiencia con presión moderada",
+  "system_2_4": "Ideal para hortalizas y viveros",
+  "system_3":"Riego por Goteo",
+  "system_3_subtitle": "Alta precisión para riego localizado. Ahorro de agua y mejor aprovechamiento de nutrientes.",
+  "system_3_1": "Ahorro de agua hasta un 50%",
+  "system_3_2": "Previene enfermedades al no mojar la superficie",
+  "system_3_3": "Mejora la eficiencia en fertilización (fertirriego)",
+  "system_3_4": "Ideal para frutales, hortalizas e invernaderos",
+  "system_4":"Bombeo y filtracion",
+  "system_4_subtitle": "Equipos esenciales para garantizar presión constante y agua limpia en todo el sistema.",
+  "system_4_1": "Bombas para pozos, presurización o superficie",
+  "system_4_2": "Filtros de arena, malla o anillos",
+  "system_4_3": "Protege goteros, aspersores y válvulas de obstrucciones",
+  "system_4_4": "Permite automatización y control del caudal",
+
+"servicios_hero_title": "Nuestros Servicios",
+"servicios_hero_subtitle": "Soluciones técnicas para el mantenimiento y mejora de tus sistemas de riego.",
+"service_1":"Servicio Correctivo",
+"service_1_subtitle": "Reparaciones rápidas y eficaces para tu sistema de riego.",
+  "service_1_1": "Atención a fallas eléctricas y mecánicas",
+  "service_1_2": "Respuesta rápida en campo",
+  "service_1_3": "Técnicos especializados",
+  "service_1_4": "Reemplazo inmediato de componentes críticos",
+  "ask_info" : "Más información", 
+  "service_2":"Servicio Preventivo",
+"service_2_subtitle": "Mantenimiento programado para evitar fallas en el sistema de riego.",
+  "service_2_1": "Limpieza de filtros y revisión de bombas",
+  "service_2_2": "Calibración de válvulas y sensores",
+  "service_2_3": "Pruebas de presión y caudal",
+  "service_2_4": "Bitácoras y programación periódica",
+  "service_3":"Venta de Refacciones",
+"service_3_subtitle": "Repuestos originales y garantizados para sistemas de riego.",
+  "service_3_1": "Filtros, válvulas, conectores y bombas",
+  "service_3_2": "Compatibilidad con múltiples marcas",
+  "service_3_3": "Asesoría para elección correcta",
+
+  "who_are_we": "¿Quiénes somos?",
+  "about_us": "Sobre nosotros",
+  "about_us_sub": "Desde nuestros inicios en 2005, Riegos Mecanizados del Pacífico ha trabajado para brindar soluciones profesionales de riego.",
+  "gallerie": "Galería",
+  "office_id": "Oficina",
+ "office_location": "Los Mochis, Sinaloa",
+ "schedule_title": "Horario de atención",
+ "schedule_hour": "Lunes a Viernes: 8:00 a.m. - 1:00 p.m. 3:00 p.m. - 6:30 p.m. Sábado:  8:00 a.m. - 1:00 p.m.",
+ "find_us": "Encuentranos",
+ "google_maps": "Ver en Google Maps",
+
+ "phone_number": "WhatsApp / Teléfono"
+
+
+
+
+
+
+
+
+
+   
+}

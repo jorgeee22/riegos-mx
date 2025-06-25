@@ -15,16 +15,16 @@
 </head>
 <body>
     
-  <!-- Nav bar-->
-   <nav class="navbar navbar-expand-lg bg-white shadow-sm ">
+
+ <!-- Nav bar-->
+   <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
   <div class="container">
        <!-- Columna del logo (30%) -->
-   <a class="navbar-brand d-flex align-items-center" href="/">
-        <img src="img/bestOneLogo.png" loading="lazy" alt="Logo" class="logo-img">
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="img/bestOneLogo.png" alt="Logo" loading="lazy"  class="logo-img">
       </a>
    
-
-    <!-- Botón para móviles -->
+ <!-- Botón para móviles -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -35,30 +35,41 @@
     <!-- Columna 2: Enlaces (70%) -->
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link " href="/">Inicio</a>
+            <a href="/" class="nav-link " data-i18n = "navbar_home">Inicio</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="/equipos.html">Sistemas de riego</a>
+            <a class='nav-link' href='/equipos.html' data-i18n = "navbar_systems">Sistemas de riego</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="/servicios.html">Servicios</a>
+            <a class='nav-link' href='/servicios.html' data-i18n = "navbar_services">Servicios</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link active" href="/empresa.html">La empresa</a>
+            <a class='nav-link active' href='/empresa.html' data-i18n = "navbar_us">La empresa</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="/contacto.html">Contacto</a>
+            <a class='nav-link' href='/contacto.html' data-i18n = "navbar_contact">Contacto</a>
           </li>
+           <!-- Selector de idioma -->
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle bi bi-globe2" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" data-i18n = "language">Idioma
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')" >Español</a></li>
+            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+          </ul>
+        </li>
         </ul>
         
       </div>
     </div>
 </nav>
 
+
    <header class="hero-header text-white text-center d-flex align-items-center justify-content-center">
   <div class="overlay w-100 h-100 position-absolute bg-dark opacity-50"></div>
   <div class="position-relative">
-    <h1 class="display-4 fw-bold">¿Quiénes somos?</h1>
+    <h1 class="display-4 fw-bold" data-i18n = "who_are_we">¿Quiénes somos?</h1>
   </div>
 </header>
 
@@ -69,24 +80,23 @@
         <img src="img/bestOneLogo.png" loading="lazy"  class="img-fluid rounded shadow" alt="Imagen oficina">
       </div>
       <div class="col-md-6">
-        <h2 class="mb-3">Sobre nosotros</h2>
-        <p class="lead">Desde nuestros inicios en 2005, Riegos Mecanizados del Pacífico ha trabajado para brindar soluciones profesionales de riego.</p>
+        <h2 class="mb-3" data-i18n = "about_us">Sobre nosotros</h2>
+        <p class="lead" data-i18n = "about_us_sub">Desde nuestros inicios en 2005, Riegos Mecanizados del Pacífico ha trabajado para brindar soluciones profesionales de riego.</p>
       </div>
     </div>
   </div>
 </section>
 
+<section class="container py-5">
+  <h2 class="text-center mb-4" data-i18n = "gallerie">Galería</h2>
     <!-- Swiper -->
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="img/field-service.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/diagnostico.jpg" loading="lazy" class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/field-service.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/diagnostico.jpg"  loading="lazy" class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/field-service.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/diagnostico.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/field-service.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/diagnostico.jpg"  loading="lazy" class="img-fluid"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0074.jpg" loading="lazy"  class="img-fluid"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0100.jpg" loading="lazy"  class="img-fluid"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0119.jpg" loading="lazy"  class="img-fluid"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0054.jpg" loading="lazy"  class="img-fluid"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0084.jpg"  loading="lazy" class="img-fluid"></div>
     <!-- Más imágenes -->
   </div>
   <!-- Opcional: flechas y paginación -->
@@ -94,6 +104,7 @@
   <div class="swiper-button-prev"></div>
   <div class="swiper-pagination"></div>
 </div>
+</section>
 
 <!-- OFICINA -->
  <div class="container my-5">
@@ -101,9 +112,9 @@
     <div class="col-md-6">
          <div class="card h-100 shadow-sm">
         <div class="card-body text-center">
-           <h4 class="card-title">Oficina</h4>
+           <h4 class="card-title"  data-i18n = "office_id">Oficina</h4>
         <img src="img/outside-office.jpeg" loading="lazy" class="img-fluid rounded mb-3" alt="Imagen oficina">
-        <p class="text-muted">Los Mochis, Sinaloa</p>
+        <p class="text-muted"  data-i18n = "office_location">Los Mochis, Sinaloa</p>
       </div>
     </div> 
   </div>
@@ -111,10 +122,10 @@
     <div class="col-md-6">
        <div class="card h-100 shadow-sm">
       <div class="card-body d-flex flex-column justify-content-center align-items-center text-center">
-        <h4 class="card-title">Horario de atención</h4>
+        <h4 class="card-title" data-i18n = "schedule_title">Horario de atención</h4>
         <i class="bi bi-clock-fill fs-1 my-3" id = "blue-txt"></i>
-        <p><strong>Lunes a Viernes:</strong><br> 8:00 a.m. - 1:00 p.m. <br>3:00 p.m. - 6:30 p.m. </p>
-       <p><strong>Sábado:</strong><br>  8:00 a.m. - 1:00 p.m.</p> 
+        <p data-i18n = "schedule_mon_fri"><strong>Lunes a Viernes:</strong></p><p> 8:00 a.m. - 1:00 p.m. <br> 3:00 p.m. - 6:30 p.m.</p> 
+       <p data-i18n = "schedule_sat"><strong>Sábado:</strong></p>  <p> 8:00 a.m. - 1:00 p.m.</p>
       </div>
     </div>
  </div>
@@ -124,13 +135,13 @@
 <!-- Google Maps -->
   <section class="bg-light py-5">
   <div class="container">
-    <h2>Encuentranos</h2>
+    <h2 data-i18n = "find_us">Encuentranos</h2>
     <div class="row">
       <div class="col">
         <div class="ratio ratio-16x9">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.667270830512!2d-108.98197092439774!3d25.81454891883649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba28b9d51ae03b%3A0x875a9839f8d8a1ee!2sRiegos%20Mecanizados%20del%20Pacifico!5e0!3m2!1ses!2smx!4v1750097168246!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>  
-        <a href="https://maps.google.com?q=Riegos+Mecanizados+del+Pacífico" target="_blank" id = "blue-btn" class="btn text-white   mt-3">
+        <a href="https://maps.google.com?q=Riegos+Mecanizados+del+Pacífico" target="_blank" id = "blue-btn" class="btn text-white mt-3" data-i18n = "google_maps">
           Ver en Google Maps
         </a>
       </div>
@@ -160,13 +171,16 @@
   </div>
 </footer>
 
+<a href="https://wa.me/5216681234567" class="whatsapp-float" target="_blank">
+  <i class="bi bi-whatsapp"></i>
+</a>
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
     const swiper = new Swiper(".mySwiper", {
-      slidesPerView:"auto",
+      slidesPerView: 1,
       centeredSlides: true,
       spaceBetween: 30,
       loop: true,
@@ -188,8 +202,9 @@
 
  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<a href="https://wa.me/5216681234567" class="whatsapp-float" target="_blank">
-  <i class="bi bi-whatsapp"></i>
-</a>
+
+
+<script src="js/lang.js"></script>
+
 </body>
 </html>

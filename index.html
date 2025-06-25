@@ -12,6 +12,7 @@
 
 <body>
 
+
   <!-- Nav bar-->
    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
   <div class="container">
@@ -31,20 +32,30 @@
     <!-- Columna 2: Enlaces (70%) -->
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link active" href="/">Inicio</a>
+            <a href="/" class="nav-link active" data-i18n = "navbar_home">Inicio</a>
           </li>
           <li class="nav-item mx-2">
-            <a class='nav-link' href='/equipos.html'>Sistemas de riego</a>
+            <a class='nav-link' href='/equipos.html' data-i18n = "navbar_systems">Sistemas de riego</a>
           </li>
           <li class="nav-item mx-2">
-            <a class='nav-link' href='/servicios.html'>Servicios</a>
+            <a class='nav-link' href='/servicios.html' data-i18n = "navbar_services">Servicios</a>
           </li>
           <li class="nav-item mx-2">
-            <a class='nav-link' href='/empresa.html'>La empresa</a>
+            <a class='nav-link' href='/empresa.html' data-i18n = "navbar_us">La empresa</a>
           </li>
           <li class="nav-item mx-2">
-            <a class='nav-link' href='/contacto.html'>Contacto</a>
+            <a class='nav-link' href='/contacto.html' data-i18n = "navbar_contact">Contacto</a>
           </li>
+           <!-- Selector de idioma -->
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle bi bi-globe2" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" data-i18n = "language">Idioma
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+            <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')" >Español</a></li>
+            <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">English</a></li>
+          </ul>
+        </li>
         </ul>
         
       </div>
@@ -56,23 +67,23 @@
 <!-- Hero Section -->
 <header class="hero-section">
   <div class="container px-3 px-md-5">
-    <h1 class="fw-bold">Somos Riegos Mecanizados del Pacifico</h1>
-    <p class="lead">Desde 2005 trabajamos para impulsar la agricultura con calidad, experiencia y atención cercana.</p>
-    <a href="/contacto.html" class="btn btn-lg header-btn mt-3">Contáctanos</a>
+    <h1 class="fw-bold" data-i18n = "hero_title">Somos Riegos Mecanizados del Pacifico</h1>
+    <p class="lead" data-i18n = "hero_subtitle">Desde 2005 trabajamos para impulsar la agricultura con calidad, experiencia y atención cercana.</p>
+    <a href="/contacto.html" class="btn btn-lg header-btn mt-3" data-i18n = "contact_us">Contáctanos</a>
   </div>
 </header>
 
 <!-- Cards Section -->
 <div class="container my-5">
-  <h2 class="text mb-4">Lo mejor para tu campo.</h2>
+  <h2 class="text mb-4" data-i18n = "cards_title">Lo mejor para tu campo.</h2>
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
     <div class="col">
       <a href="/equipos.html" class="text-decoration-none">
       <div class="card h-100 shadow-sm ">
-        <img src="img/riego-mecanizado-pivot.jpg" loading="lazy" class="card-img-top" alt="Imagen 1">
+        <img src="img/IMG-20250623-WA0070.jpg" loading="lazy" class="card-img-top" alt="Imagen 1">
         <div class="card-body">
-          <h5 class="card-title">Sistemas de riego</h5>
-          <p class="card-text">Venta, instalación y mantenimiento completo.</p>
+          <h5 class="card-title" data-i18n = "card_1_title">Sistemas de riego</h5>
+          <p class="card-text" data-i18n = "card_1_subtitle">Venta, instalación y mantenimiento completo.</p>
         </div>
       </div></a>
     </div>
@@ -81,28 +92,28 @@
       <div class="card h-100 shadow-sm">
         <img src="img/Mini-Aspersor-Refacciones.jpg" loading="lazy" class="card-img-top" alt="Imagen 2">
         <div class="card-body">
-          <h5 class="card-title">Refacciones</h5>
-          <p class="card-text">Refacciones agrícolas originales.</p>
+          <h5 class="card-title"  data-i18n = "card_2_title">Refacciones</h5>
+          <p class="card-text"  data-i18n = "card_2_subtitle">Refacciones agrícolas originales.</p>
         </div>
       </div></a>
     </div>
     <div class="col">
       <a href="/servicios.html" class="text-decoration-none">
       <div class="card h-100 shadow-sm">
-        <img src="img/RECORRIDO-CAMPO.jpg" class="card-img-top" alt="Imagen 3">
+        <img src="img/2b41c63c-4f2f-460a-84de-df7bc74466c5.jpeg" class="card-img-top" alt="Imagen 3">
         <div class="card-body">
-          <h5 class="card-title">Servicios Tecnicos</h5>
-          <p class="card-text">Asistencia en campo y soporte tecnico.</p>
+          <h5 class="card-title"  data-i18n = "card_3_title">Servicios Tecnicos</h5>
+          <p class="card-text"  data-i18n = "card_3_subtitle">Asistencia en campo y soporte tecnico.</p>
         </div>
       </div></a>
     </div>
     <div class="col">
       <a href="/servicios.html" class="text-decoration-none">
       <div class="card h-100 shadow-sm">
-        <img src="img/diagnostico.jpg" class="card-img-top" alt="Imagen 4">
+        <img src="img/IMG-20250623-WA0126.jpg" class="card-img-top" alt="Imagen 4" >
         <div class="card-body">
-          <h5 class="card-title">Asesoria Personalizada</h5>
-          <p class="card-text">Diagnóstico y soluciones para tu terreno.</p>
+          <h5 class="card-title"  data-i18n = "card_4_title">Asesoria Personalizada</h5>
+          <p class="card-text"  data-i18n = "card_4_subtitle">Diagnóstico y soluciones para tu terreno.</p>
         </div>
       </div></a>
     </div>
@@ -111,7 +122,7 @@
 
 <!-- Brands Section -->
 <div class="container my-5">
-  <h2 class="text mb-5">Las marcas que distribuimos</h2>
+  <h2 class="text mb-5"  data-i18n = "brands_title">Las marcas que distribuimos</h2>
 
   <!-- Grid 4×2 -->
   <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
@@ -152,8 +163,8 @@
 
 <!-- Contact Section -->          
 <div class="container my-5" id="contacto">
-  <h2 class="text mb-">Contáctanos</h2>
-  <p class="text mb-5">Estamos aquí para ayudarte. Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+  <h2 class="text mb-"  data-i18n = "contact_us">Contáctanos</h2>
+  <p class="text mb-5"  data-i18n = "contact_subtitle">Estamos aquí para ayudarte. Puedes comunicarte con nosotros a través de los siguientes medios:</p>
 
   <div class="row text-center">
     <div class="col-md-3 mb-4">
@@ -173,7 +184,7 @@
 
     <div class="col-md-3 mb-4">
       <i   class="bi bi-clock-fill fs-2 mb-2 iconBoot"></i>
-      <p>Lun a Vie: 8:00 a.m. - 1:00 p.m. <br>  3:00 p.m. - 6:30 p.m. <br>Sáb: 8:00 a.m. - 1:00 p.m.</p>
+      <p data-i18n = "schedule_1">Lun a Vie: 8:00 a.m. - 1:00 p.m. <br>  3:00 p.m. - 6:30 p.m. <br> Sáb: 8:00 a.m. - 1:00 p.m.</p>
     </div>
   </div>
 </div>
@@ -197,10 +208,16 @@
   </div>
 </footer>
 
- <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Whatsapp globo-->
   <a href="https://wa.me/5216681234567" class="whatsapp-float" target="_blank">
   <i class="bi bi-whatsapp"></i>
 </a>
+
+
+ <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/lang.js"></script>
+
 </body>
 </html>
