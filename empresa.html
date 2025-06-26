@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/page.css">
+   <link rel="stylesheet" href="css/empresa.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> 
 
 </head>
@@ -87,24 +88,45 @@
   </div>
 </section>
 
-<section class="container py-5">
-  <h2 class="text-center mb-4" data-i18n = "gallerie">Galería</h2>
-    <!-- Swiper -->
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide"><img src="img/IMG-20250623-WA0074.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/IMG-20250623-WA0100.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/IMG-20250623-WA0119.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/IMG-20250623-WA0054.jpg" loading="lazy"  class="img-fluid"></div>
-    <div class="swiper-slide"><img src="img/IMG-20250623-WA0084.jpg"  loading="lazy" class="img-fluid"></div>
+   <!-- Galeria -->
+  <h2 class="text-center mb-4" data-i18n = "gallery">Galería</h2>
+  <section class="gallery_container d-none d-lg-grid">
+   <img src="img/IMG-20250623-WA0074.jpg" loading="lazy" alt = "imagen 1">
+    <img src="img/IMG-20250623-WA0100.jpg" loading="lazy"  alt = "imagen 2">
+   <img src="img/IMG-20250623-WA0054.jpg" loading="lazy"  alt = "imagen 3">
+   <img src="img/IMG-20250623-WA0099.jpg" loading="lazy " alt = "imagen 4">
+    <img src="img/IMG-20250623-WA0084.jpg"  loading="lazy" alt = "imagen 5">
+     <img src="img/IMG-20250623-WA0119.jpg" loading="lazy" alt = "imagen 6">
+   <img src="img/IMG-20250623-WA0140.jpg" loading="lazy " alt = "imagen 7">
+  <img src="img/IMG-20250623-WA0117.jpg" loading="lazy " alt = "imagen 8">
+      <img src="img/IMG-20250623-WA0129.jpg" loading="lazy " alt = "imagen 9">
+       <img src="img/IMG-20250623-WA0135.jpg" loading="lazy " alt = "imagen 10">
+        <img src="img/IMG-20250623-WA0142.jpg" loading="lazy " alt = "imagen 11">
     <!-- Más imágenes -->
-  </div>
-  <!-- Opcional: flechas y paginación -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
-</div>
 </section>
+
+<!-- Swiper para móviles -->
+<div class="swiper-container d-lg-none">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0074.jpg" alt="1" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0100.jpg" alt="2" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0054.jpg" alt="3" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0099.jpg" alt="4" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0084.jpg" alt="5" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0119.jpg" alt="6" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0140.jpg" alt="7" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0117.jpg" alt="8" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0129.jpg" alt="9" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0135.jpg" alt="10" loading="lazy"></div>
+    <div class="swiper-slide"><img src="img/IMG-20250623-WA0142.jpg" alt="11" loading="lazy"></div>
+    <!-- ...más imágenes -->
+  </div>
+
+  <!-- Controles -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 
 <!-- OFICINA -->
  <div class="container my-5">
@@ -178,27 +200,26 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
+
   <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      centeredSlides: true,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-       breakpoints: {
-      768: { slidesPerView: 2 },
-      992: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 }
-       }
-    });
-  </script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.innerWidth < 992) {
+      new Swiper('.swiper-container', {
+        loop: true,
+        spaceBetween: 10,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    }
+  });
+</script>
+
 
  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

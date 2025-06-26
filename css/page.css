@@ -169,8 +169,12 @@ footer a:hover {
 
 .swiper-slide img {
   width: 100%;
-  height: fit-content; /* o el alto que necesites */
+  height: 100%; /* o el alto que necesites */
   object-fit: cover;
-  border-radius: 0.5rem;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 1rem;
 }
 

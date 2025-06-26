@@ -1,0 +1,18 @@
+img {
+    width: 100%;
+    object-fit: cover;
+}   
+
+.gallery_container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.gallery_container img{
+    height: 100%;
+}
