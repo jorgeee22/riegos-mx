@@ -1,7 +1,3 @@
-img {
-    width: 100%;
-    object-fit: cover;
-}   
 
 .gallery_container{
     width: 90%;
@@ -15,4 +11,6 @@ img {
 
 .gallery_container img{
     height: 100%;
+     width: 100%;
+    object-fit: cover;
 }

@@ -78,7 +78,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
-        <img src="img/bestOneLogo.png" loading="lazy"  class="img-fluid rounded shadow" alt="Imagen oficina">
+        <img src="img/Logotipo_Riegos_Mecanizados_del_Pacífico.png" loading="lazy"  class="img-fluid rounded shadow" alt="Imagen oficina">
       </div>
       <div class="col-md-6">
         <h2 class="mb-3" data-i18n = "about_us">Sobre nosotros</h2>
@@ -88,25 +88,28 @@
   </div>
 </section>
 
-   <!-- Galeria -->
-  <h2 class="text-center mb-4" data-i18n = "gallery">Galería</h2>
-  <section class="gallery_container d-none d-lg-grid">
-   <img src="img/IMG-20250623-WA0074.jpg" loading="lazy" alt = "imagen 1">
-    <img src="img/IMG-20250623-WA0100.jpg" loading="lazy"  alt = "imagen 2">
-   <img src="img/IMG-20250623-WA0054.jpg" loading="lazy"  alt = "imagen 3">
-   <img src="img/IMG-20250623-WA0099.jpg" loading="lazy " alt = "imagen 4">
-    <img src="img/IMG-20250623-WA0084.jpg"  loading="lazy" alt = "imagen 5">
-     <img src="img/IMG-20250623-WA0119.jpg" loading="lazy" alt = "imagen 6">
-   <img src="img/IMG-20250623-WA0140.jpg" loading="lazy " alt = "imagen 7">
-  <img src="img/IMG-20250623-WA0117.jpg" loading="lazy " alt = "imagen 8">
-      <img src="img/IMG-20250623-WA0129.jpg" loading="lazy " alt = "imagen 9">
-       <img src="img/IMG-20250623-WA0135.jpg" loading="lazy " alt = "imagen 10">
-        <img src="img/IMG-20250623-WA0142.jpg" loading="lazy " alt = "imagen 11">
-    <!-- Más imágenes -->
-</section>
 
-<!-- Swiper para móviles -->
-<div class="swiper-container d-lg-none">
+   <!-- Galeria -->
+    <section class="py-5 bg-white">
+  <h2 class="text-center mb-4" data-i18n = "gallery">Galería</h2>
+  <div class="gallery_container d-none d-lg-grid">
+    <img src="img/IMG-20250623-WA0074.jpg" loading="lazy" alt = "imagen 1">
+    <img src="img/IMG-20250623-WA0100.jpg" loading="lazy"  alt = "imagen 2">
+    <img src="img/IMG-20250623-WA0054.jpg" loading="lazy"  alt = "imagen 3">
+    <img src="img/IMG-20250623-WA0099.jpg" loading="lazy " alt = "imagen 4">
+    <img src="img/IMG-20250623-WA0084.jpg"  loading="lazy" alt = "imagen 5">
+    <img src="img/IMG-20250623-WA0119.jpg" loading="lazy" alt = "imagen 6">
+    <img src="img/IMG-20250623-WA0140.jpg" loading="lazy " alt = "imagen 7">
+    <img src="img/IMG-20250623-WA0117.jpg" loading="lazy " alt = "imagen 8">
+    <img src="img/IMG-20250623-WA0129.jpg" loading="lazy " alt = "imagen 9">
+    <img src="img/IMG-20250623-WA0135.jpg" loading="lazy " alt = "imagen 10">
+    <img src="img/IMG-20250623-WA0142.jpg" loading="lazy " alt = "imagen 11">
+    <!-- Más imágenes -->
+    </div>
+
+
+  <!-- Swiper para móviles -->
+ <div class="swiper-container d-lg-none">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><img src="img/IMG-20250623-WA0074.jpg" alt="1" loading="lazy"></div>
     <div class="swiper-slide"><img src="img/IMG-20250623-WA0100.jpg" alt="2" loading="lazy"></div>
@@ -119,14 +122,11 @@
     <div class="swiper-slide"><img src="img/IMG-20250623-WA0129.jpg" alt="9" loading="lazy"></div>
     <div class="swiper-slide"><img src="img/IMG-20250623-WA0135.jpg" alt="10" loading="lazy"></div>
     <div class="swiper-slide"><img src="img/IMG-20250623-WA0142.jpg" alt="11" loading="lazy"></div>
-    <!-- ...más imágenes -->
-  </div>
-
-  <!-- Controles -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-</div>
+      </div> 
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+ 
 
 <!-- OFICINA -->
  <div class="container my-5">
@@ -206,14 +206,10 @@
     if (window.innerWidth < 992) {
       new Swiper('.swiper-container', {
         loop: true,
-        spaceBetween: 10,
-        pagination: {
+        spaceBetween: 30,
+         pagination: {
           el: '.swiper-pagination',
           clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
         },
       });
     }
