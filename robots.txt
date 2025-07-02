@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://riegosmecanizados.com/sitemap.xml
