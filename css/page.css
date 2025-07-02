@@ -30,6 +30,7 @@ header p{
 
 section p{
 font-size: 1.25rem;
+color: #555;
 }
 
 
@@ -99,9 +100,6 @@ section h3 {
   font-weight: 600;
 }
 
-section p {
-  color: #555;
-}
 
 .iconBoot{
   color : #002159;
